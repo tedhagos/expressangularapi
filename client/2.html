@@ -1,0 +1,18 @@
+<html ng-app="xyz">
+  <body ng-controller="controller">
+
+    <input type="text" ng-model="abc" style="font-size:1.5em"><br/>
+    <div ng-repeat="author in authors | filter:abc">
+      <h2>{{ author.firstname}} {{ author.lastname }}</h2>
+      <ul>
+        <li ng-repeat="b in author.books">
+          {{ b }}
+        </li>
+      </ul>
+    </div>
+
+    
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="2.js"></script>
+  </body>
+</html>
