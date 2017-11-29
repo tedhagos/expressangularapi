@@ -1,6 +1,6 @@
-var abc = angular.module('xyz', []);
+var app = angular.module('app', []);
 
-abc.controller('controller', function($scope){
+app.controller('controller', function($scope){
   $scope.user = {
     name: "James Gosling",
     occupation : "Java programmer"

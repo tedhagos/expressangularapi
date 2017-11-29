@@ -1,0 +1,15 @@
+<div>
+
+  <input type="text" placeholder="Search author" ng-model="author_filter" search-enter>
+
+  <div ng-show="!!author">
+    <h2>
+      {{ author.lastname }} , {{ author.firstname }}
+    </h2>
+    <ul>
+      <li ng-repeat="book in author.books">
+        {{ book }}
+      </li>
+    </ul>
+  </div>
+</div>
