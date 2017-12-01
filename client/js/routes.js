@@ -11,7 +11,8 @@ app.config(function($routeProvider, $locationProvider){
       controller: "addAuthorController"
     })
     .when('/addbook', {
-      templateUrl: "views/add-book.html"
+      templateUrl: "views/add-book.html",
+      controller: "addBookController"
     })
     .otherwise({redirectTo: '/'})
 });

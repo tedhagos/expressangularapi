@@ -1,4 +1,13 @@
 
+app.controller('addBookController', function($scope, $http){
+  
+  $scope.findAuthor = function(name) {
+    $http.get('http://localhost:3000/api/author' + name)
+         .then(function(response){
+           $scope.author = response.data;
+         });
+  }
+});
 
 app.controller('allAuthorController', function($scope, authorsvc){
   

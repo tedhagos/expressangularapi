@@ -1,5 +1,5 @@
 <div>
-  <input type="text" ng-model="authorFilter">
+  <input type="text" ng-model="authorFilter" placeholder="Filter author">
   <div ng-repeat="a in authors | filter: authorFilter">
     <h2>{{ a.firstname}} {{ a.lastname }}</h2>
     <ul>
