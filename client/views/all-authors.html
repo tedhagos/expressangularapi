@@ -1,0 +1,11 @@
+<div>
+  <input type="text" ng-model="authorFilter">
+  <div ng-repeat="a in authors | filter: authorFilter">
+    <h2>{{ a.firstname}} {{ a.lastname }}</h2>
+    <ul>
+      <li ng-repeat="book in a.books">
+        {{ book }}
+      </li>
+    </ul>
+  </div>
+</div>

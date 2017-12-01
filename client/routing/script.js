@@ -19,6 +19,6 @@ app.config(function($routeProvider, $locationProvider){
     .otherwise({redirectTo: '/'})
 });
 
-app.controller('one', function() {
-  
+app.controller('one', function($scope) {
+  console.log($scope);
 })
