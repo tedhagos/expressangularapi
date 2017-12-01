@@ -1,0 +1,19 @@
+<html ng-app="app">
+  <body ng-controller="controller">
+
+    <ul>
+      <li ng-repeat="i in numbers">
+        {{ i | digitToWords}}
+      </li>
+    </ul>
+
+    <ul>
+      <li ng-repeat="n in names">
+        {{ n.name }} {{ n.likes | stars }}
+      </li>
+    </ul>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="4-filters.js"></script>
+  </body>
+</html>
